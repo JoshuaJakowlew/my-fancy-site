@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            border: 5px double purple;
+            border-radius: 15px;
+        }
+
+        .main-photo {
+            width: 300px;
+            border-radius: 50%;
+        }
+
+        .button {
+            background: gold;
+            border: 2px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .button:hover {
+            background-color: silver;
+            transition: 0.5s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function sayHello() {
+            alert('Hello world!');
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Hello, world!</h1>
+    </div>
+    <div class="content">
+        <p class="red bold"><i>Параграф</i> 1</p>
+        <p class="green bold">Параграф 2</p>
+
+        <button class="button" onclick="sayHello()">Хоба</button>
+        <a class="button" href="http://htmlbook.ru/">Перейти на HtmlBook</a>
+
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+    
+        <img class="main-photo" src="./img/cat.jpg" />
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gzVs8Hy2t-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
